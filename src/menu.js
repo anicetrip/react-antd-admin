@@ -13,123 +13,143 @@
 // 定义siderbar菜单
 const sidebarMenu = [
   {
-    key: 'index',  // route时url中的值
-    name: '菜单哈哈哈',  // 在菜单中显示的名称
+    key: 'class',  // route时url中的值
+    name: '班级相关信息',  // 在菜单中显示的名称
     icon: 'smile',  // 图标是可选的
     child: [
       {
-        key: 'option1',
-        name: '模拟CRUD',
-        icon: 'play-circle',   // 二级三级菜单也可以带图标
+        key: 'college',
+        name: '学院表',
+        // icon: 'play-circle',   // 二级三级菜单也可以带图标
       },
       {
-        key: 'option2',
-        name: '图片DEMO',
-        icon: 'android',
+        key: 'main',
+        name: '系表',
+        // icon: 'android',
       },
       {
-        key: 'option3',
-        name: '自定义操作',
-        icon: 'bulb',
+        key: 'direct',
+        name: '方向表',
+        // icon: 'bulb',
+      },
+      {
+        key: 'class',
+        name: '班级表',
+        // icon: 'bulb',
       },
     ],
   },
   {
-    key: 'alone',
-    name: '我没有子菜单',
-    icon: 'clock-circle',
+    key: 'lesson',
+    name: '课程表',
+    // icon: 'clock-circle',
   },
   {
-    key: 'alone2',
-    name: '我没有图标',
+    key: 'student',
+    name: '学生表',
+    // icon: 'clock-circle',
   },
   {
-    key: 'noiconhaha',
-    name: '又一个没图标的',
-    child: [
-      {
-        key: 'nesnesnes',
-        name: 'N64',
-      },
-    ],
+    key: 'score',
+    name: '成绩表',
+    // icon: 'clock-circle',
   },
   {
-    key: 'daohang',
-    name: '导航',
-    icon: 'appstore',
-    child: [
-      {
-        key: '555',
-        name: '选项5',
-      },
-      {
-        key: 'sanji',  // 最多只能到三级导航
-        name: '三级导航',
-        icon: 'laptop',
-        child: [
-          {
-            key: '666',
-            name: '选项6',
-            icon: 'check',
-          },
-          {
-            key: '777',
-            name: '选项7',
-            icon: 'close',
-          },
-          {
-            key: '888',
-            name: '选项8',
-          },
-          {
-            key: '999',
-            name: '选项9',
-          },
-        ],
-      },
-    ],
+    key: 'teacher',
+    name: '教师表',
+    // icon: 'clock-circle',
   },
-  {
-    key: 'test',
-    name: '测试',
-    icon: 'eye',
-    child: [
-      {
-        key: 'aaa',
-        name: '选项a',
-      },
-      {
-        key: 'bbb',
-        name: '选项b',
-        icon: 'pause',
-      },
-      {
-        key: 'ccc',
-        name: '选项c',
-      },
-      {
-        key: 'sanjiaaa',  // 最多只能到三级导航
-        name: '三级导航aaa',
-        child: [
-          {
-            key: '666aa',
-            name: '选项6',
-            icon: 'meh',
-          },
-        ],
-      },
-      {
-        key: 'sanjibbb',  // 最多只能到三级导航
-        name: '三级导航bbb',
-        child: [
-          {
-            key: '666bb',
-            name: '选项6',
-          },
-        ],
-      },
-    ],
-  },
+  // {
+  //   key: 'alone2',
+  //   name: '我没有图标',
+  // },
+  // {
+  //   key: 'noiconhaha',
+  //   name: '又一个没图标的',
+  //   child: [
+  //     {
+  //       key: 'nesnesnes',
+  //       name: 'N64',
+  //     },
+  //   ],
+  // },
+  // {
+  //   key: 'daohang',
+  //   name: '导航',
+  //   icon: 'appstore',
+  //   child: [
+  //     {
+  //       key: '555',
+  //       name: '选项5',
+  //     },
+  //     {
+  //       key: 'sanji',  // 最多只能到三级导航
+  //       name: '三级导航',
+  //       icon: 'laptop',
+  //       child: [
+  //         {
+  //           key: '666',
+  //           name: '选项6',
+  //           icon: 'check',
+  //         },
+  //         {
+  //           key: '777',
+  //           name: '选项7',
+  //           icon: 'close',
+  //         },
+  //         {
+  //           key: '888',
+  //           name: '选项8',
+  //         },
+  //         {
+  //           key: '999',
+  //           name: '选项9',
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   key: 'test',
+  //   name: '测试',
+  //   icon: 'eye',
+  //   child: [
+  //     {
+  //       key: 'aaa',
+  //       name: '选项a',
+  //     },
+  //     {
+  //       key: 'bbb',
+  //       name: '选项b',
+  //       icon: 'pause',
+  //     },
+  //     {
+  //       key: 'ccc',
+  //       name: '选项c',
+  //     },
+  //     {
+  //       key: 'sanjiaaa',  // 最多只能到三级导航
+  //       name: '三级导航aaa',
+  //       child: [
+  //         {
+  //           key: '666aa',
+  //           name: '选项6',
+  //           icon: 'meh',
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       key: 'sanjibbb',  // 最多只能到三级导航
+  //       name: '三级导航bbb',
+  //       child: [
+  //         {
+  //           key: '666bb',
+  //           name: '选项6',
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
 ];
 
 export default sidebarMenu;

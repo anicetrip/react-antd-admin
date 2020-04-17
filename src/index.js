@@ -33,33 +33,41 @@ const routes = (
       <Route path="/" component={App}>
         <IndexRoute component={Welcome}/>
 
-        <Route path="index">
-          <Route path="option1" tableName="test" getComponent={DBTableContainer}/>
-          <Route path="option2" tableName="testSms" getComponent={DBTableContainer}/>
-          <Route path="option3" tableName="testAction" getComponent={DBTableContainer}/>
+
+        <Route path="class">
+          <Route path="college" tableName="chdCollege" getComponent={DBTableContainer}/>
+          <Route path="main" tableName="testSms" getComponent={DBTableContainer}/>
+          <Route path="direct" tableName="testAction" getComponent={DBTableContainer}/>
+          <Route path="class" tableName="testAction1" getComponent={DBTableContainer}/>
         </Route>
 
-        <Route path="daohang">
-          <Route path="555" component={Hello}/>
-          <Route path="sanji">
-            <Route path="666" component={Hello}/>
-            <Route path="777" component={Hello}/>
-            <Route path="888" component={Hello}/>
-            <Route path="999" component={Hello}/>
-          </Route>
-        </Route>
+        <Route path="lesson" tableName="test" component={DBTableContainer}/>
+        <Route path="student" tableName="test" component={DBTableContainer}/>
+        <Route path="score" tableName="test" component={DBTableContainer}/>
+        <Route path="teacher" tableName="test" component={DBTableContainer}/>
 
-        <Route path="test">
-          <Route path="aaa" component={Hello}/>
-          <Route path="bbb" component={Hello}/>
-          <Route path="ccc" component={Hello}/>
-          <Route path="sanjiaaa">
-            <Route path="666aa" component={Hello}/>
-          </Route>
-          <Route path="sanjibbb">
-            <Route path="666bb" component={Hello}/>
-          </Route>
-        </Route>
+
+        {/*<Route path="daohang">*/}
+        {/*  <Route path="555" component={Hello}/>*/}
+        {/*  <Route path="sanji">*/}
+        {/*    <Route path="666" component={Hello}/>*/}
+        {/*    <Route path="777" component={Hello}/>*/}
+        {/*    <Route path="888" component={Hello}/>*/}
+        {/*    <Route path="999" component={Hello}/>*/}
+        {/*  </Route>*/}
+        {/*</Route>*/}
+
+        {/*<Route path="test">*/}
+        {/*  <Route path="aaa" component={Hello}/>*/}
+        {/*  <Route path="bbb" component={Hello}/>*/}
+        {/*  <Route path="ccc" component={Hello}/>*/}
+        {/*  <Route path="sanjiaaa">*/}
+        {/*    <Route path="666aa" component={Hello}/>*/}
+        {/*  </Route>*/}
+        {/*  <Route path="sanjibbb">*/}
+        {/*    <Route path="666bb" component={Hello}/>*/}
+        {/*  </Route>*/}
+        {/*</Route>*/}
 
         <Route path="headerMenu5">
           <Route path="headerMenu5000000" component={Hello}/>

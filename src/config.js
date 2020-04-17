@@ -2,7 +2,7 @@
  * 定义整个项目的全局配置
  */
 
-'use strict';
+// 'use strict';
 
 // 约定优于配置
 // 我可以提供尽量多的配置, 但尽量不要太个性化, 接口的路径/名称/格式之类的
@@ -13,7 +13,7 @@ module.exports = {
   favicon: 'http://jxy.me/favicon.ico',  // 设置网页的favicon, 可以是外链, 也可以是本地
   footer: '<a target="_blank" href="http://jxy.me">foolbear</a>版权所有 © 2015-2099',  // footer中显示的字, 可以嵌入html标签
 
-  debug: true,  // 是否开启debug模式, 不会请求后端接口, 使用mock的数据
+  debug: false,  // 是否开启debug模式, 不会请求后端接口, 使用mock的数据
 
   tabMode: {  // tab模式相关配置
     enable: false,  // 是否开启tab模式
@@ -74,8 +74,8 @@ module.exports = {
       showUpdate: true,  // 显示修改按钮, 默认true
       showDelete: true,  // 显示删除按钮, 默认true
 
-      asyncSchema: false,  // 是否从服务端加载schema, 默认false
-      ignoreSchemaCache: false,  // 是否忽略schema的缓存, 对于异步schema而言, 默认只会请求一次后端接口然后缓存起来
+      asyncSchema: true,  // 是否从服务端加载schema, 默认false
+      ignoreSchemaCache: true,  // 是否忽略schema的缓存, 对于异步schema而言, 默认只会请求一次后端接口然后缓存起来
     },
   },
 
