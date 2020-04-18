@@ -41,7 +41,8 @@ const routes = (
           <Route path="class" tableName="testAction1" getComponent={DBTableContainer}/>
         </Route>
 
-        <Route path="lesson" tableName="test" component={DBTableContainer}/>
+
+        <Route path="option1" tableName="test" component={DBTableContainer}/>
         <Route path="student" tableName="test" component={DBTableContainer}/>
         <Route path="score" tableName="test" component={DBTableContainer}/>
         <Route path="teacher" tableName="test" component={DBTableContainer}/>

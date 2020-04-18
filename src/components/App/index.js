@@ -108,7 +108,7 @@ class App extends React.Component {
     // 如果服务端说没有登录, 就要跳转到sso或者login组件
     if (globalConfig.isSSO() && !globalConfig.debug) {
       // debug模式不支持调试单点登录
-      // 因为没有单点登录的地址啊...跳不回来
+      //       // 因为没有单点登录的地址啊...跳不回来
       logger.debug('not login, redirect to SSO login page');
       const redirect = encodeURIComponent(window.location.href);
       window.location.href = `${globalConfig.login.sso}${redirect}`;
