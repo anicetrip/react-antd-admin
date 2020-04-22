@@ -40,7 +40,7 @@ const sidebarMenu = [
     ],
   },
   {
-    key: 'lesson',
+    key: 'option1',
     name: '课程表',
     // icon: 'clock-circle',
   },

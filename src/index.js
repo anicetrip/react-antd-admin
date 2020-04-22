@@ -36,12 +36,10 @@ const routes = (
 
         <Route path="class">
           <Route path="college" tableName="chdCollege" getComponent={DBTableContainer}/>
-          <Route path="main" tableName="testSms" getComponent={DBTableContainer}/>
-          <Route path="direct" tableName="testAction" getComponent={DBTableContainer}/>
+          <Route path="main" tableName="chdMain" getComponent={DBTableContainer}/>
+          <Route path="direct" tableName="chdDirect" getComponent={DBTableContainer}/>
           <Route path="class" tableName="testAction1" getComponent={DBTableContainer}/>
         </Route>
-
-
         <Route path="option1" tableName="test" component={DBTableContainer}/>
         <Route path="student" tableName="test" component={DBTableContainer}/>
         <Route path="score" tableName="test" component={DBTableContainer}/>

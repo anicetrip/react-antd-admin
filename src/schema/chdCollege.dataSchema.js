@@ -6,14 +6,30 @@ module.exports = [
   {
     key: 'collegeId',
     title: '学院ID',
-    dataType: 'int',
+    dataType: 'varchar',
     primary: true,
+    showInTable: true,  // 这一列是否要在table中展示, 默认true
+    disabled: true, // 表单中这一列是否禁止编辑, 默认false
+    // eslint-disable-next-line key-spacing
+    showInForm:false,
   },
   {
     key: 'collegeName',
     title: '学院名称',
     dataType: 'varchar',
     validator: [{type: 'string', max: 10, message: '最多10个字符'}],
+    showInTable: true,  // 这一列是否要在table中展示, 默认true
+    disabled: false, // 表单中这一列是否禁止编辑, 默认false
+  },
+  {
+    key: 'isCreate',
+    title: '时间查看',
+    dataType: 'varchar',
+    // validator: [{type: 'string', max: 10, message: '最多10个字符'}],
+    showInTable: false,  // 这一列是否要在table中展示, 默认true
+    disabled: true, // 表单中这一列是否禁止编辑, 默认false
+    // eslint-disable-next-line key-spacing
+    showInForm:false,
   },
 
 

@@ -16,7 +16,7 @@ module.exports = [
     dataType: 'int',  // 数据类型, 目前可用的: int/float/varchar/datetime
 
     // 这一列是否是主键?
-    // 如果不指定主键, 不能update/delete, 但可以insert
+    // 如果不指定u主键, 不能pdate/delete, 但可以insert
     // 如果指定了主键, insert/update时不能填写主键的值;
     // 只有int/varchar可以作为主键, 但是实际上主键一般都是自增id
     primary: true,

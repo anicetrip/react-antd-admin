@@ -53,9 +53,9 @@ class InnerForm extends React.PureComponent {
 
   /**
    * 处理url参数, 填入表单
-   */
-  processQueryParams() {
-    const params = Utils.getAllQueryParams();
+  */
+    processQueryParams() {
+      const params = Utils.getAllQueryParams();
     if (Object.keys(params).length > 0) {
       this.formComponent.setFieldsValue(params);
     }

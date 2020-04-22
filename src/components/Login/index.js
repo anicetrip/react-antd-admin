@@ -73,6 +73,7 @@ class Login extends React.PureComponent {
   render() {
     // 整个组件被一个id="loginDIV"的div包围, 样式都设置到这个div中
     return (
+
       <div id="loginDIV">
 
         {/*debug模式下显示fork me on github*/}

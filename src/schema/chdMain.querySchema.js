@@ -5,7 +5,13 @@
 module.exports = [
   {
     key: 'collegeId',  // 传递给后端的字段名
-    title: '学院ID',  // 前端显示的名称
+    title: '学院编号',  // 前端显示的名称
     dataType: 'varchar',
   },
+  {
+    key: 'mainId',  // 传递给后端的字段名
+    title: '系编号',  // 前端显示的名称
+    dataType: 'varchar',
+  },
+
 ];
