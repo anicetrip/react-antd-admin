@@ -32,17 +32,19 @@ module.exports = [
     primary: false,
     validator: [{type: 'string', max: 10, message: '最多10个字符'}],
     showInTable: true,  // 这一列是否要在table中展示, 默认true
-    disabled: true, // 表单中这一列是否禁止编辑, 默认false
+    disabled: false, // 表单中这一列是否禁止编辑, 默认false
     // eslint-disable-next-line key-spacing
-    showInForm:false,
+    showInForm:true,
   },
   {
-    key: 'directName',
-    title: '方向名称',
+    key: 'classId',
+    title: '班级号',
     dataType: 'varchar',
     validator: [{type: 'string', max: 10, message: '最多10个字符'}],
     showInTable: true,  // 这一列是否要在table中展示, 默认true
     disabled: false, // 表单中这一列是否禁止编辑, 默认false
+    // defaultValue: '不填可根据最大班级号加一获得新的班级号', // 默认值, 只在insert时生效, update时不生效
+    placeholder: '不填可根据最大班级号加一获得新的班级号',
   },
   {
     key: 'isCreate',
@@ -69,7 +71,7 @@ module.exports = [
       {
         name: '修改数据',
         type: 'update',  // 更新单条记录
-        keys: [ 'directName'],  // 允许更新哪些字段, 如果不设置keys, 就允许更所有字段
+        // keys: [ 'directName'],  // 允许更新哪些字段, 如果不设置keys, 就允许更所有字段
       },
       {
         name: '删除',
