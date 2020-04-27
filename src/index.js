@@ -35,16 +35,19 @@ const routes = (
 
 
         <Route path="class">
-          <Route path="college" tableName="chdCollege" getComponent={DBTableContainer}/>
+          <Route path="college" tableName="chdCollege" getComponent={DBTableContainer} />
           <Route path="main" tableName="chdMain" getComponent={DBTableContainer}/>
-          <Route path="direct" tableName="chdDirect" getComponent={DBTableContainer}/>
-          <Route path="class" tableName="testAction1" getComponent={DBTableContainer}/>
-        </Route>
-        <Route path="option1" tableName="test" component={DBTableContainer}/>
-        <Route path="student" tableName="test" component={DBTableContainer}/>
-        <Route path="score" tableName="test" component={DBTableContainer}/>
-        <Route path="teacher" tableName="test" component={DBTableContainer}/>
+          <Route path="direct" tableName="chdDirect" getComponent={DBTableContainer} />
+          <Route path="class" tableName="chdClasss" getComponent={DBTableContainer}>
+          <Route path="lesson" tableName="chdLesson" getComponent={DBTableContainer}>
 
+        {/*</Route>*/}
+        {/*<Route path="others">*/}
+        {/*  <Route path="lesson" tableName="chdLesson" component={DBTableContainer} />*/}
+        {/*  <Route path="student" tableName="test" component={DBTableContainer} />*/}
+        {/*  <Route path="score" tableName="test" component={DBTableContainer} />*/}
+        {/*  <Route path="teacher" tableName="test" component={DBTableContainer} />*/}
+        {/*</Route>*/}
 
         {/*<Route path="daohang">*/}
         {/*  <Route path="555" component={Hello}/>*/}

@@ -40,25 +40,37 @@ const sidebarMenu = [
     ],
   },
   {
-    key: 'option1',
-    name: '课程表',
-    // icon: 'clock-circle',
+    key: 'others',  // route时url中的值
+    name: '其他内容',  // 在菜单中显示的名称
+    icon: 'smile',  // 图标是可选的
+    child: [
+      {
+        key: 'lesson',
+        name: '课程表',
+        // icon: 'clock-circle',
+      },
+      {
+        key: 'student',
+        name: '学生表',
+        // icon: 'clock-circle',
+      },
+      {
+        key: 'score',
+        name: '成绩表',
+        // icon: 'clock-circle',
+      },
+      {
+        key: 'teacher',
+        name: '教师表',
+        // icon: 'clock-circle',
+      },
+    ],
   },
-  {
-    key: 'student',
-    name: '学生表',
-    // icon: 'clock-circle',
-  },
-  {
-    key: 'score',
-    name: '成绩表',
-    // icon: 'clock-circle',
-  },
-  {
-    key: 'teacher',
-    name: '教师表',
-    // icon: 'clock-circle',
-  },
+
+
+
+
+
   // {
   //   key: 'alone2',
   //   name: '我没有图标',

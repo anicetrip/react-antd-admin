@@ -21,7 +21,7 @@ module.exports = {
   devtool: 'eval-source-map',
 
   entry: [
-    'webpack-dev-server/client?http://0.0.0.0:9000', // WebpackDevServer host and port
+    'webpack-dev-server/client?http://0.0.0.0:8080', // WebpackDevServer host and port
     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
     'babel-polyfill',  // 可以使用完整的ES6特性, 大概增加100KB
     './src/index.js',  // 编译的入口
@@ -32,7 +32,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   devServer: {
-    port: 9000
+    port: 8080
   },
   resolve: {
     modulesDirectories: ['node_modules', './src'],  // import时到哪些地方去寻找模块
