@@ -4,13 +4,13 @@
 
 module.exports = [
   {
-    key: 'lessonCollegeId',  // 传递给后端的字段名
-    title: '学院',  // 前端显示的名称
+    key: 'teacherId',  // 传递给后端的字段名
+    title: '老师',  // 前端显示的名称
     dataType: 'varchar',
   },
   {
-    key: 'lessonName',  // 传递给后端的字段名
-    title: '学院',  // 前端显示的名称
+    key: 'lessonId',  // 传递给后端的字段名
+    title: '课程',  // 前端显示的名称
     dataType: 'varchar',
   },
 

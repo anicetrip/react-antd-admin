@@ -38,16 +38,13 @@ const routes = (
           <Route path="college" tableName="chdCollege" getComponent={DBTableContainer} />
           <Route path="main" tableName="chdMain" getComponent={DBTableContainer}/>
           <Route path="direct" tableName="chdDirect" getComponent={DBTableContainer} />
-          <Route path="class" tableName="chdClasss" getComponent={DBTableContainer}>
-          <Route path="lesson" tableName="chdLesson" getComponent={DBTableContainer}>
+          <Route path="classs" tableName="chdClasss" getComponent={DBTableContainer}/>
+        </Route>
+          <Route path="lesson" tableName="chdLesson" getComponent={DBTableContainer} />
+          <Route path="student" tableName="chdStudent" getComponent={DBTableContainer} />
+          <Route path="score" tableName="chdScore" getComponent={DBTableContainer} />
+          <Route path="teacher" tableName="chdTeacher" getComponent={DBTableContainer} />
 
-        {/*</Route>*/}
-        {/*<Route path="others">*/}
-        {/*  <Route path="lesson" tableName="chdLesson" component={DBTableContainer} />*/}
-        {/*  <Route path="student" tableName="test" component={DBTableContainer} />*/}
-        {/*  <Route path="score" tableName="test" component={DBTableContainer} />*/}
-        {/*  <Route path="teacher" tableName="test" component={DBTableContainer} />*/}
-        {/*</Route>*/}
 
         {/*<Route path="daohang">*/}
         {/*  <Route path="555" component={Hello}/>*/}
@@ -71,21 +68,21 @@ const routes = (
         {/*  </Route>*/}
         {/*</Route>*/}
 
-        <Route path="headerMenu5">
-          <Route path="headerMenu5000000" component={Hello}/>
-          <Route path="headerMenu51111">
-            <Route path="headerMenu51111aa" component={Hello}/>
-            <Route path="headerMenu51111bb" component={Hello}/>
-          </Route>
-          <Route path="headerMenu52222">
-            <Route path="headerMenu52222aa" component={Hello}/>
-            <Route path="headerMenu52222bb" component={Hello}/>
-          </Route>
-        </Route>
+        {/*<Route path="headerMenu5">*/}
+        {/*  <Route path="headerMenu5000000" component={Hello}/>*/}
+        {/*  <Route path="headerMenu51111">*/}
+        {/*    <Route path="headerMenu51111aa" component={Hello}/>*/}
+        {/*    <Route path="headerMenu51111bb" component={Hello}/>*/}
+        {/*  </Route>*/}
+        {/*  <Route path="headerMenu52222">*/}
+        {/*    <Route path="headerMenu52222aa" component={Hello}/>*/}
+        {/*    <Route path="headerMenu52222bb" component={Hello}/>*/}
+        {/*  </Route>*/}
+        {/*</Route>*/}
 
-        <Route path="headerMenu4" component={Hello}/>
-        <Route path="alone" component={Hello}/>
-        <Route path="alone2" component={Hello}/>
+        {/*<Route path="headerMenu4" component={Hello}/>*/}
+        {/*<Route path="alone" component={Hello}/>*/}
+        {/*<Route path="alone2" component={Hello}/>*/}
 
         <Route path="*" component={Error}/>
 

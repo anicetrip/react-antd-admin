@@ -4,11 +4,11 @@ import {UpdateGPA1, UpdateGPA2} from '../components/UpdateComponentDemo';
 //TODO 这个才复制下来明天按照数据库表处理,数据库加create便于模块化操作
 module.exports = [
   {
-    key: 'lessonName',
-    title: '课程名',
+    key: 'teacherId',
+    title: '老师',
     dataType: 'varchar',
+    // validator: [{type: 'string', max: 10, message: '最多10个字符'}],
     primary: false,
-    validator: [{type: 'string', max: 10, message: '最多10个字符'}],
     showInTable: true,  // 这一列是否要在table中展示, 默认true
     disabled: false, // 表单中这一列是否禁止编辑, 默认false
     // eslint-disable-next-line key-spacing
@@ -16,36 +16,26 @@ module.exports = [
   },
   {
     key: 'lessonId',
-    title: '课程ID',
-    dataType: 'varchar',
-    validator: [{type: 'string', max: 10, message: '最多10个字符'}],
-    primary: true,
-    showInTable: true,  // 这一列是否要在table中展示, 默认true
-    disabled: false, // 表单中这一列是否禁止编辑, 默认false
-    // eslint-disable-next-line key-spacing
-    showInForm:false,
-  },
-  {
-    key: 'lessonGpa',
-    title: 'GPA',
+    title: '课程',
     dataType: 'varchar',
     primary: false,
-    validator: [{type: 'string', max: 10, message: '最多10个字符'}],
+    // validator: [{type: 'string', max: 10, message: '最多10个字符'}],
     showInTable: true,  // 这一列是否要在table中展示, 默认true
     disabled: false, // 表单中这一列是否禁止编辑, 默认false
     // eslint-disable-next-line key-spacing
     showInForm:true,
   },
   {
-    key: 'lessonCollegeId',
-    title: '班级号',
+    key: 'isCreate',
+    title: '时间查看',
     dataType: 'varchar',
-    validator: [{type: 'string', max: 10, message: '最多10个字符'}],
-    showInTable: true,  // 这一列是否要在table中展示, 默认true
-    disabled: false, // 表单中这一列是否禁止编辑, 默认false
-    // defaultValue: '不填可根据最大班级号加一获得新的班级号', // 默认值, 只在insert时生效, update时不生效
+    primary: true,
+    // validator: [{type: 'string', max: 10, message: '最多10个字符'}],
+    showInTable: false,  // 这一列是否要在table中展示, 默认true
+    disabled: true, // 表单中这一列是否禁止编辑, 默认false
+    // eslint-disable-next-line key-spacing
+    showInForm:false,
   },
-
 
 
   // 定义针对单条记录的操作
@@ -60,7 +50,7 @@ module.exports = [
       {
         name: '修改数据',
         type: 'update',  // 更新单条记录
-        // keys: [ 'lessonName','lessonGpa','lessonGpa','lessonCollegeId'],  // 允许更新哪些字段, 如果不设置keys, 就允许更所有字段
+        // keys: [],  // 允许更新哪些字段, 如果不设置keys, 就允许更所有字段
       },
       {
         name: '删除',

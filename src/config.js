@@ -21,7 +21,7 @@ module.exports = {
   },
 
   log: {
-    level: 'debug',  // 日志级别, 类似slf4j中的root logger, 目前支持debug/info/warn/error 4种级别
+    level: 'info',  // 日志级别, 类似slf4j中的root logger, 目前支持debug/info/warn/error 4种级别
     // 除了root logger以外, 也可以为每个logger单独设置级别
     debug: [],
     info: [],
